@@ -1,0 +1,89 @@
+<div class="col-md-6 ">
+  <!-- BEGIN SAMPLE FORM PORTLET-->
+  <div class="portlet light bordered">
+    <div class="portlet-title">
+      <div class="caption font-red-sunglo">
+        <i class="icon-settings font-red-sunglo"></i>
+        <span class="caption-subject bold uppercase">Add Department</span>
+      </div>
+    </div>
+    <div class="portlet-body form">
+      <form role="form" ng-submit="CreateDepartment()">
+        <div class="form-body">
+          <div class="form-group">
+            <label>Department Name</label>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="fa fa-users font-green"></i>
+              </span>
+              <input type="text" class="form-control" ng-model="d.name" ng-change="SuggestCode()">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Department Code</label>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="fa fa-code font-green"></i>
+              </span>
+              <input type="text" class="form-control"  ng-model="d.code">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="fa fa-key font-green"></i>
+              </span>
+              <input type="password" class="form-control"  ng-model="d.password">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-actions right">
+          <button type="button" class="btn default">Cancel</button>
+          <button class="btn green mt-ladda-btn ladda-button" data-style="expand-left" type="submit"
+                  ng-disabled="!d.name || !d.code || !d.password">
+            <span class="ladda-label">Sign In</span>
+
+            <span class="ladda-spinner"></span><div class="ladda-progress" style="width: 0px;"></div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- END SAMPLE FORM PORTLET-->
+</div>
+
+<div class="col-md-6 ">
+  <!-- BEGIN SAMPLE FORM PORTLET-->
+  <div class="portlet light bordered">
+    <div class="portlet-title">
+      <div class="caption font-red-sunglo">
+        <i class="icon-settings font-red-sunglo"></i>
+        <span class="caption-subject bold uppercase">Departments List</span>
+      </div>
+    </div>
+    <div class="portlet-body">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+          <tr>
+            <th> ID </th>
+            <th> Name </th>
+            <th> Code </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr ng-repeat="department in departments">
+            <td> {{department.id}} </td>
+            <td>{{department.name}}</td>
+            <td>{{department.code}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- END SAMPLE FORM PORTLET-->
+</div>

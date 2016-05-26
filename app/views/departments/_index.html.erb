@@ -1,0 +1,25 @@
+<div class="container-fluid" ng-controller='DepartmentsCtrl'>
+  <div class="page-content">
+    <!-- BEGIN BREADCRUMBS -->
+    <div class="breadcrumbs">
+      <h1>Departments</h1>
+      <ol class="breadcrumb">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li class="active">Departments</li>
+      </ol>
+    </div>
+    <!-- END BREADCRUMBS -->
+    <!-- BEGIN PAGE BASE CONTENT -->
+
+    <div class="row" ng-show="$parent.main.department_action == 'add'" ng-cloak>
+
+      <%= render 'departments/form_add_department' %>
+
+    </div>
+    <!-- END PAGE BASE CONTENT -->
+  </div>
+
+  <%= render 'shared/footer' %>
+</div>
