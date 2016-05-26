@@ -21,4 +21,12 @@
 //= require jquery.validate
 //= require jquery.validate.additional-methods
 //= require jquery.backstretch
+
+//ANGULAR
+//= require angular
+//= require angular-animate
+//= require angular-resource
+
+//MY ANGULAR
+
 //= require login

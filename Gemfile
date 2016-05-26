@@ -40,6 +40,8 @@ gem 'backstretch-rails', '~> 2.0', '>= 2.0.4'
 gem 'ladda-rails', '~> 0.9.7'
 #authentication
 gem 'devise', '~> 4.1', '>= 4.1.1'
+#angular <3
+gem 'angularjs-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
