@@ -16,8 +16,9 @@
 //= require angular-resource
 
 //MY ANGULAR
+//= require app/app
+//= require app/controllers/login
 
-//= require login
 //= require "spin"
 //= require "ladda"
 //= require "ladda.jquery"

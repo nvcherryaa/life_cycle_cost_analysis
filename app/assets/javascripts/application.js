@@ -28,5 +28,3 @@
 //= require angular-resource
 
 //MY ANGULAR
-
-//= require login
