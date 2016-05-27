@@ -11,3 +11,5 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( layout_login.css )
 Rails.application.config.assets.precompile += %w( layout_login.js )
+Rails.application.config.assets.precompile += %w( layout_admin.css )
+Rails.application.config.assets.precompile += %w( layout_admin.js )
