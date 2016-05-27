@@ -3,8 +3,17 @@ app.factory('$departments', function($http, $q){
   //return public api
   return({
     CreateDepartment: CreateDepartment,
-    GetDepartments: GetDepartments
+    GetDepartments: GetDepartments,
+    GetDepartments2: GetDepartments2
   });
+
+  function GetDepartments2(){
+    return $http({
+      url: '/api/v1/departments'
+    }).then(function(response){
+      return response.data;
+    })
+  }
 
   function CreateDepartment(department_obj){
 

@@ -3,6 +3,12 @@ app.controller('DepartmentsCtrl', function($scope, $departments, $timeout){
   //form object for add_department
   $scope.d = {}
 
+  $departments.GetDepartments2().then(function(data){
+    console.log(data);
+  }).catch(function(){
+    console.log('errors')
+  })
+  
   $scope.CreateDepartment = function(){
     console.log(this.l)
     $scope.l.ladda('start');
@@ -59,6 +65,6 @@ app.controller('DepartmentsCtrl', function($scope, $departments, $timeout){
     })
   }
 
-  $scope.GetDepartments();
+  //$scope.GetDepartments();
 
 })
